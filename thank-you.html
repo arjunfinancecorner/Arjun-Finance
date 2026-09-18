@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Confirmed — Arjun Finance Corner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="ty">
+    <div class="ty__card">
+      <img src="assets/arjun-photo.jpg" alt="Arjun" class="ty__photo">
+      <div class="ty__check">✓</div>
+      <h1 class="ty__title">Payment Confirmed!</h1>
+      <p class="ty__sub">Neenga unga ₹1 Crore roadmap session book pannitinga. Email-la oru confirmation vandhurukum — check pannunga (spam/promotions folder-um check pannunga).</p>
+
+      <div class="ty__next">
+        <h2>Next Steps</h2>
+        <ol>
+          <li>Kelow irukura WhatsApp community-ku join pannunga — session timing, reminders, ellame ippodhaan share pannuvom</li>
+          <li>Unga session slot-a confirm panna, WhatsApp-la unga name + preferred time share pannunga</li>
+        </ol>
+      </div>
+
+      <!-- REPLACE THIS with your actual WhatsApp community/group invite link -->
+      <a href="https://chat.whatsapp.com/YOUR_COMMUNITY_INVITE_LINK" target="_blank" rel="noopener" class="btn btn--primary btn--large ty__wa-btn">💬 WhatsApp Community-ku Join Pannunga</a>
+
+      <p class="ty__help">Edhavadhu doubt irundha, direct-a WhatsApp pannunga: <a href="#" id="tyWhatsappDirect">96558 80439</a></p>
+    </div>
+  </main>
+
+  <script>
+    const waMessage = encodeURIComponent("Hi Arjun, naan ippodhaan ₹49 session-ku payment pannen!");
+    document.getElementById("tyWhatsappDirect").href = `https://wa.me/919655880439?text=${waMessage}`;
+  </script>
+</body>
+</html>
